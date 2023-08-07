@@ -12,11 +12,11 @@ $$
 V_k (u) 
 	&= - \frac{1}{2} k u^2 \\
 f_k 
-	&= ku^2
+	&= ku
 \end{align}
 $$
 
-with force constant $k$, displacement $u$, and force $f_k = - \partial_k V_k$.
+with force constant $k$, displacement $u$, and force $f_k = - \partial_u V_k$.
 
 Partition function:
 
