@@ -18,7 +18,7 @@ $$
 
 with force constant $k$, displacement $u$, and force $f_k = - \partial_u V_k$.
 
-Partition function:
+Harmonic partition function:
 
 $$
 \mathcal Z_k 
@@ -27,7 +27,7 @@ $$
 = \sqrt{\frac{2 \pi}{\beta k}}
 $$
 
-Free energy:
+Harmonic free energy:
 
 $$
 F_k 
@@ -53,22 +53,22 @@ $$
 
 ## Free energy minimization
 
-Gibbs-Bogoliubov:
+Gibbs-Bogoliubov inequality:
 
 $$
 F 
-\leq F_k + \langle V - V_k \rangle_k
+\leq F_k + \langle V - V_k \rangle_k~,
 $$
 
-Search extremum in $k$:
+with true free energy $F$, trial/harmonic free energy $F_k$, true potential $V$ and trial/harmonic potential $V_k$.
+
+Search extremum in $k$ for the right-hand side of the inequality:
 
 $$
 \begin{align}
-\partial_k F
-	&= 0 \\
 \partial_k F_k
 	&= \frac{1}{2 \beta k} = \frac{1}{2} \langle u^2 \rangle_k \\
-\partial_k \langle V_k \rangle
+\partial_k \langle V_k \rangle_k
 	&= 0 \\
 \partial_k \langle V \rangle_k
 	&= \frac{1}{2 k} \langle u f \rangle_k
