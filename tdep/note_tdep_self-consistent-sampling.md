@@ -62,7 +62,7 @@ $$
 
 with true free energy $F$, trial/harmonic free energy $F_k$, true potential $V$ and trial/harmonic potential $V_k$.
 
-Search extremum in $k$ for the right-hand side of the inequality:
+Search extremum in $k$ for the right-hand side of the inequality: 
 
 $$
 \begin{align}
@@ -110,7 +110,18 @@ $$
 
 which is the _least-squares_ solution for a given trial nuclear distribution. An iterative solution, where $k_n$ from step $n$ is used to set up the next generation of displacements and obtain a new force constant $k_{n+1}$, leads to free-energy minimization when self-consistency is reached. Iterative sTDEP is therefore equivalent to self-consistent phonon schemes, as also noted in [[vanRoekeghem2021]](#suggested-reading).
 
+## TDEP
+
+**Exercise:** Show that force fitting in the true distribution given by the full potential $V(u$) corresponds to maximizing the trial free energy
+
+$$
+F \geq F_k + \langle V - V_k \rangle~.
+$$
+
+This means that the original TDEP using molecular dynamics simulations to sample the $V(u)$ desribed in [[Hellman2013]](#suggested-reading) corresponds to free energy _maximization_.
+
 ## Suggested reading
 
 - [R. Bianco *et al.*, Phys Rev B **96**, 014111 (2017)](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.96.014111)
 - [A. van Roekeghem, J. Carrete, and N. Mingo, Comput Phys Commun **263**, 107945 (2021)](https://www.sciencedirect.com/science/article/pii/S0010465521000710?via%3Dihub)
+- [O. Hellman *et al.*, Phys Rev B **87**, 104111 (2013)](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.87.104111)
